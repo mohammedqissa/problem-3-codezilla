@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red204\green120\blue50;\red43\green43\blue43;\red169\green183\blue198;
+\red255\green198\blue109;\red152\green118\blue170;\red106\green135\blue89;\red104\green151\blue187;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 mport \cf4 javax.swing.*\cf2 ;\uc0\u8232 import \cf4 java.util.Scanner\cf2 ;\uc0\u8232 \u8232 \u8232 public class \cf4 Main \{\uc0\u8232 \u8232 \u8232     \cf2 public static void \cf5 main\cf4 (String[] args)\{\uc0\u8232         System.
+\f1\i \cf6 out
+\f0\i0 \cf4 .print(\cf7 "enter a number : "\cf4 )\cf2 ;\uc0\u8232         \cf4 Scanner sc\cf2 ;\uc0\u8232         \cf4 sc = \cf2 new \cf4 Scanner(System.
+\f1\i \cf6 in
+\f0\i0 \cf4 )\cf2 ;\uc0\u8232         int \cf4 n = sc.nextInt()\cf2 ;\uc0\u8232 \u8232 \u8232         int \cf4 number_of_parentheses = (
+\f1\i fact
+\f0\i0 (\cf8 2 \cf4 * n) / ( 
+\f1\i fact
+\f0\i0 ( (\cf8 2\cf4 *n) - n) * 
+\f1\i fact 
+\f0\i0 (n) )) / ( n + \cf8 1\cf4 )\cf2 ;\uc0\u8232         \cf4 System.
+\f1\i \cf6 out
+\f0\i0 \cf4 .print(number_of_parentheses)\cf2 ;\uc0\u8232         char\cf4 [] arr = \cf2 new char\cf4 [\cf8 2\cf4 *n]\cf2 ;\uc0\u8232 \u8232         for\cf4 (\cf2 int \cf4 i = \cf8 0 \cf2 ; \cf4 i < arr.\cf6 length\cf4 /\cf8 2 \cf2 ; \cf4 i++)\{\uc0\u8232             arr[i] = \cf7 '(' \cf2 ;\uc0\u8232         \cf4 \}\uc0\u8232         \cf2 for\cf4 (\cf2 int \cf4 i = arr.\cf6 length \cf4 / \cf8 2  \cf2 ; \cf4 i < arr.\cf6 length \cf2 ; \cf4 i++)\{\uc0\u8232             arr[i] = \cf7 ')'\cf2 ;\uc0\u8232         \cf4 \}\uc0\u8232         System.
+\f1\i \cf6 out
+\f0\i0 \cf4 .println()\cf2 ;\uc0\u8232         for\cf4 (\cf2 int \cf4 i = \cf8 0 \cf2 ; \cf4 i < arr.\cf6 length \cf2 ; \cf4 i++)\{\uc0\u8232             System.
+\f1\i \cf6 out
+\f0\i0 \cf4 .print(arr[i])\cf2 ;\uc0\u8232         \cf4 \}\uc0\u8232         System.
+\f1\i \cf6 out
+\f0\i0 \cf4 .println()\cf2 ;\uc0\u8232         for\cf4 ( \cf2 int \cf4 k = \cf8 0 \cf2 ; \cf4 k < n -\cf8 1 \cf2 ; \cf4 k++) \{\uc0\u8232             \cf2 for \cf4 (\cf2 int \cf4 i = \cf8 0\cf2 ; \cf4 i < arr.\cf6 length \cf4 - \cf8 1\cf2 ; \cf4 i++) \{\uc0\u8232                 \cf2 if \cf4 (arr[i] != arr[i + \cf8 1\cf4 ] && (i + \cf8 1\cf4 ) != (arr.\cf6 length \cf4 - \cf8 1\cf4 )) \{\uc0\u8232                     \cf2 char \cf4 tmp = arr[i]\cf2 ;\uc0\u8232                     \cf4 arr[i] = arr[i + \cf8 1\cf4 ]\cf2 ;\uc0\u8232                     \cf4 arr[i + \cf8 1\cf4 ] = tmp\cf2 ;\uc0\u8232                     for \cf4 (\cf2 int \cf4 j = \cf8 0\cf2 ; \cf4 j < arr.\cf6 length\cf2 ; \cf4 j++) \{\uc0\u8232                         System.
+\f1\i \cf6 out
+\f0\i0 \cf4 .print(arr[j])\cf2 ;\uc0\u8232                     \cf4 \}\uc0\u8232                     System.
+\f1\i \cf6 out
+\f0\i0 \cf4 .println()\cf2 ;\uc0\u8232                 \cf4 \}\uc0\u8232             \}\u8232         \}\u8232 \u8232 \u8232 \u8232     \}\u8232 \u8232  \cf2 static int \cf5 fact\cf4 (\cf2 int \cf4 n)\{\uc0\u8232 \u8232      \cf2 if\cf4 ( n ==  \cf8 1\cf4 )\{\uc0\u8232          \cf2 return \cf8 1 \cf2 ;\uc0\u8232      \cf4 \}\uc0\u8232 \u8232      \cf2 return 
+\f1\i \cf4 fact
+\f0\i0 (n - \cf8 1\cf4 ) * n \cf2 ;\uc0\u8232 \u8232  \cf4 \}\uc0\u8232 \u8232 \u8232 \}\u8232 \
+}
